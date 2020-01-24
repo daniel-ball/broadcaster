@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{  
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50 px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.avatar{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 530px;
+    top: 143px;
+    animation-delay: .50s;
+}
+
+.backgroundimg{
+    position: absolute;
+    width: 1336px;
+    height: 900px;
+
+    background-color: rgb(24, 24, 24);
+    background: url( background.png );
+    background-repeat: no-repeat;
+}
+
+.appbackground{
+    position: absolute;
+    width: 310px;
+    height: 620px;
+    left: 425px;
+    top: 100px;
+
+    background: url(appbackground.svg);
+
+}
+
+.ul{
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    display: inline;
+}
+
+.li{
+    margin: 0px;
+    padding: 0.2em;
+    display: block;
+}
+
+.roombox{
+    position: relative;
+    width: 250px;
+    height: 45px; /* was 32 */
+    left: 27px;
+    top: 150px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 0px solid #FFFCFC;
+    box-sizing: border-box;
+
+    color: #FFFFFF;
+    font-style: normal;
+
+    padding: 11px;
+   
+}
+
+.textarea{
+    position: absolute;
+    width: 250px;
+    height: 31px;
+    left: 30px;
+    top: 530px;
+
+
+    background: #F2F2F2;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto; 
+}
+
+.sendbutton{
+    position: absolute;
+    width: 250px;
+    height: 31px;
+    left: 30px;
+    top: 570px;
+
+    background: rgb(156, 121, 172);
+
+    padding: 0;
+    border: none;
+    color: #FFFFFF;
+}
+
+.whitering{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 110px;
+    top: 48px;
+
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+
+.webextext{
+    position: absolute;
+    width: 284px;
+    height: 28px;
+    left: 13px;
+    top: 5px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.spacing{
+    padding: 1px 5px 5px 5px;
+}

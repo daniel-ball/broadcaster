@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div>
+You submitted {{ comments }} 
+</div>
+
+<p><a href="{{ url_for('home') }}">Back</a></p>
+{% endblock %}

@@ -1,0 +1,45 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="backgroundimg">
+     <img class="avatar animated fadeIn" src= {{ pic }} >
+    <div class="appbackground animated fadeInUp">
+        <div class="whitering animated "></div>
+            <div class="webextext animated ">WEBEX BROADCASTER</div>
+
+<!-- Validation logic to check if the form fields are empty -->
+{% if message %}
+    <p> {{ message | safe }} </p>
+{% endif %}
+
+<!-- Loop through the api call results for get rooms -->
+
+    <div class="">
+        <div class="">
+        <form action="/submit" method="POST">
+{% for i in roomba %}
+            <ul class="ul li">
+                <li class="ul animated fadeInUp roombox custom-control custom-switch">
+                    <div class="spacing">
+                <input type="checkbox" value=   {{  i.id }} name="rooms" class="custom-control-input" id= {{ i.id }} >
+                <label class="custom-control-label" for= {{ i.id }} ></label>
+                {{i.title}}
+                    </div>
+                </li>
+            </ul>
+{% endfor %}
+        <div>
+            <textarea class="textarea" id="exampleTextarea" name="comments" cols="20" rows="1" Placeholder=" Enter your message..."></textarea>
+        </div>
+            <input type="submit" value="Submit" class="sendbutton">
+        </form>       
+            </div>      
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
