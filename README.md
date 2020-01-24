@@ -3,7 +3,7 @@ This is a broadcasting app for Webex Teams, built with python, flask, and the we
 
 # Quickstart
 
-Open terminal and go to your project folder. Inside the folder, type: 
+Open a command prompt and CD into your project folder. 
 
 pipenv shell
 
